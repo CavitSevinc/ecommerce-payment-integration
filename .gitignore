@@ -7,48 +7,95 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/Dotnet.gitignore
 
-# Build results
+## ========= Build results =========
+# VS / .NET
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+bld/
+[Bb]in/
+[Oo]bj/
+artifacts/
+
+# Platform-specific
 x64/
 x86/
 [Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
+
+# Logs
 [Ll]og/
 [Ll]ogs/
-
-# .NET Core
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
-
-# NuGet Packages
-*.nupkg
-# NuGet Symbol Packages
-*.snupkg
-
-# Others
-~$*
-*~
-CodeCoverage/
+*.log
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
 
 # MSBuild Binary and Structured Log
 *.binlog
 
-# MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
+## ========= .NET Core / ASP.NET =========
+project.lock.json
+project.fragment.lock.json
+ScaffoldingReadMe.txt
+publish/
 
+## ========= NuGet =========
+# Packages
+*.nupkg
+# Symbol packages
+*.snupkg
+packages/
+.nuget/
+
+## ========= Test Results =========
+# MSTest
+[Tt]est[Rr]esult*/
 # NUnit
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+# Coverlet
+coverage.*
+
+## ========= Temporary files =========
+~$*
+*~
+
+## ========= Code Coverage =========
+CodeCoverage/
+
+## ========= macOS =========
+# Finder metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Desktop.ini
+
+## ========= Visual Studio / Rider / IDE =========
+.vs/
+*.suo
+*.user
+*.userprefs
+*.rsuser
+*.ide.*
+*.VC.db
+*.VC.opendb
+*.opendb
+
+# Rider
+.idea/
+
+## ========= VS Code =========
+.vscode/
+*.code-workspace
+
+## ========= Misc =========
+# Scaffolding logs
+ScaffoldingReadMe.*
+# IIS
+*.log
